@@ -1,8 +1,8 @@
 #!/bin/bash
 read -p 'Type Your Commit message : ' commit
-export msg="commit"
+export msg="$commit"
 git add .
 sleep 1
-git commit -m "This should"
+git commit -m "$msg"
 sleep 2
 git push
