@@ -1,0 +1,9 @@
+#!/bin/bash
+export commit="New Update"
+echo 'Type Your Commit message : '
+read $commit
+git add .
+sleep 1
+git commit -m "$commit"
+sleep 2
+git push
